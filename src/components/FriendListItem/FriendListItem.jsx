@@ -2,10 +2,16 @@ import React from "react";
 import styles from "./FriendListItem.module.css";
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
-    <div>
+    <div className={styles.wrapperListItem}>
       <img src={avatar} alt={name} width="48" />
-      <p>{name}</p>
-      <p className={isOnline ? "status online" : "status offline"}>
+      <p className={styles.nameListItemUser}>{name}</p>
+      <p
+        className={
+          isOnline
+            ? `${styles.status} ${styles.online}`
+            : `${styles.status} ${styles.offline}`
+        }
+      >
         {isOnline ? "Online" : "Offline"}
       </p>
     </div>

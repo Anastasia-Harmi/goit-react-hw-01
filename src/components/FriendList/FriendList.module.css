@@ -1,0 +1,9 @@
+.itemFriends {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  list-style: none;
+  margin-top: 54px;
+  margin-bottom: 54px;
+  padding: 0;
+}
