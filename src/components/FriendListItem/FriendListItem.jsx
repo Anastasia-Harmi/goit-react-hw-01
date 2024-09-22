@@ -1,5 +1,5 @@
 import React from "react";
-
+import styles from "./FriendListItem.module.css";
 const FriendListItem = ({ avatar, name, isOnline }) => {
   return (
     <div>
@@ -13,4 +13,3 @@ const FriendListItem = ({ avatar, name, isOnline }) => {
 };
 
 export default FriendListItem;
-     
